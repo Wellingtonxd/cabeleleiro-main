@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruan do Lol</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+</nav>
+
+<img src="../static/img/re1.jpg">
+{% for c in perfil %}
+<li>Nome: {{c.username}}</li>
+<li>email: {{c.email}}</li>
+<li>-----------------------------</li>
+{% endfor%}
+<a href="https://web.whatsapp.com/" target="_blank"><img width="100" height="100" src="https://img.icons8.com/ios/100/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+</body>
+</html>
