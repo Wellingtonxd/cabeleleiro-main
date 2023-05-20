@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="{%static 'css/meu.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1> GERE SEU QRCODE</h1>
+    <form method="post" action="">
+        {% csrf_token%}
+        <div class="user_details">
+             <div class="input_box">
+                <input type="text" name="data" id=entry placeholder="Digite Aqui...">
+             </div>
+             <input type="submit" value="Gerador de Qrcode" id="btn">
+
+        </div>
+        </form>
+            {%  if data %}
+            <img src="{{MEDIA_URL}}{%static 'img/qrcode1.png' %}" alt ='no image'>
+            {% else %}
+            <h1>Por favor insira algum dado</h1>
+            {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    paddiing: 0;
+    text-decoration: none;
+    box_shadow: border-box;
+}
+.user_details .input_box input{
+     max-width: 45px;
+     width: 100%
+     outline: none;
+     font-size; 16px;
+     border-radius: 5px;
+     paddiing-left: 15px;
+     border: 1px solid #ccc;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+
+}
+
+
+.container{
+    max-width: 700px;
+    width: 100%
+    margin-left: 20%
+    background-color: #fffffff;
+    paddiing: 25px 30px;
+    border-radius: 5px;
+    align-items: center
+    justify-content: center
+    box_shadow: 0 5px 10x rgba(0,0,0,0.15)
+}
